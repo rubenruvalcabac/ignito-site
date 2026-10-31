@@ -1,0 +1,41 @@
+:root {
+  --ig-accent: #d9480f;
+  --ig-accent-soft: #fff0e6;
+  --ig-surface: #f8f9fa;
+}
+[data-bs-theme="dark"] {
+  --ig-accent: #ff8a4c;
+  --ig-accent-soft: #3a2116;
+  --ig-surface: #1c1f23;
+}
+
+body { background: var(--bs-body-bg); }
+html { scroll-padding-top: 72px; }
+
+.site-nav { background: var(--bs-body-bg); }
+.brand-flame { color: var(--ig-accent); font-size: 1.25rem; }
+
+.hero { padding: 5rem 0 4rem; }
+.hero-badge { background: var(--ig-accent-soft); color: var(--ig-accent); font-weight: 500; padding: .5em 1em; }
+.hero-lead { max-width: 640px; }
+
+[data-bs-theme="dark"] .cta-primary { background: #f8f9fa; color: #212529; border-color: #f8f9fa; }
+[data-bs-theme="dark"] .cta-primary:hover { background: #e9ecef; color: #212529; }
+
+.feature { background: var(--ig-surface); border-radius: .75rem; padding: 1.25rem; }
+.feature > i { font-size: 1.5rem; color: var(--ig-accent); }
+
+.step-num {
+  width: 2.5rem; height: 2.5rem; margin: 0 auto .75rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: var(--ig-accent-soft); color: var(--ig-accent); font-weight: 600;
+}
+
+.contact { background: var(--ig-surface); }
+
+code { color: var(--ig-accent); }
+
+@media (max-width: 575.98px) {
+  .hero { padding: 3rem 0 2.5rem; }
+  .hero h1 { font-size: 2rem; }
+}
